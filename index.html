@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Cat·logo Corporativo Merch</title>
+    <title>Cat√°logo Corporativo Merch</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         :root { 
@@ -193,7 +193,7 @@
 
     <div class="header">
         <img id="logo-site" src="" alt="Logo">
-        <span id="logo-texto" style="font-weight: 800; color: var(--primary); display: none;">MI CAT¡LOGO</span>
+        <span id="logo-texto" style="font-weight: 800; color: var(--primary); display: none;">MI CAT√ÅLOGO</span>
     </div>
 
     <div id="categorias-menu" class="categorias-nav" style="display:none;"></div>
@@ -216,23 +216,23 @@
     <div class="branding-pido">
         <img src="https://lh3.googleusercontent.com/d/1SGywAsWA8FAiwUhOd03aEhsBzGrXgotX" alt="Empresa Desarrolladora" class="img-dev-suelta">
         <p style="font-size:13px; color:#64748b; margin-top:0px;">Sitio creado por pido.club</p>
-        <a href="https://wa.me/5491165614612?text=Quiero%20averiguar%20los%20precios%20para%20integrar%20Pido Club%20a%20mi%20negocio." target="_blank" style="color:var(--primary); font-weight:800; text-decoration:none; font-size:11px; border:1px solid; padding:6px 12px; border-radius:8px; display:inline-block; margin-top:5px;">SOLICITAR CAT¡LOGO</a>
+        <a href="https://wa.me/5491165614612?text=Quiero%20averiguar%20los%20precios%20para%20integrar%20Pido Club%20a%20mi%20negocio." target="_blank" style="color:var(--primary); font-weight:800; text-decoration:none; font-size:11px; border:1px solid; padding:6px 12px; border-radius:8px; display:inline-block; margin-top:5px;">SOLICITAR CAT√ÅLOGO</a>
     </div>
 
     <div id="anchor-datos"></div>
     <div class="opciones-container" id="seccion-opciones" style="display:none;">
         <label style="font-size:11px; font-weight:800; color:var(--text-light);">DATOS DE LA EMPRESA</label>
-        <input type="text" id="input-nombre" placeholder="Nombre / RazÛn Social" class="input-texto">
-        <input type="tel" id="input-tel" placeholder="TelÈfono" class="input-texto">
+        <input type="text" id="input-nombre" placeholder="Nombre / Raz√≥n Social" class="input-texto">
+        <input type="tel" id="input-tel" placeholder="Tel√©fono" class="input-texto">
         <input type="email" id="input-email" placeholder="Email" class="input-texto">
         <div style="display: flex; gap: 10px;">
             <select id="select-tipo-doc" style="flex: 0.4;">
                 <option value="CUIT">CUIT</option>
                 <option value="DNI">DNI</option>
             </select>
-            <input type="text" id="input-doc" placeholder="N˙mero" class="input-texto" style="flex:1">
+            <input type="text" id="input-doc" placeholder="N√∫mero" class="input-texto" style="flex:1">
         </div>
-        <input type="text" id="input-cp" placeholder="CÛdigo Postal" class="input-texto">
+        <input type="text" id="input-cp" placeholder="C√≥digo Postal" class="input-texto">
         <label style="font-size:11px; font-weight:800; color:var(--text-light);">FORMA DE PAGO</label>
         <select id="select-pago" onchange="actualizarTotal()">
             <option value="Transferencia Bancaria">Transferencia Bancaria</option>
@@ -267,7 +267,7 @@
         </div>
     </div>
 
-    <a href="https://wa.me/5491176075453?text=Hola!%20Quiero%20comprar%20pero%20antes%20me%20gustarÌa%20realizar%20una%20consulta." class="whatsapp-float" target="_blank">
+    <a href="https://wa.me/5491176075453?text=Hola!%20Quiero%20comprar%20pero%20antes%20me%20gustar√≠a%20realizar%20una%20consulta." class="whatsapp-float" target="_blank">
         <i class="fab fa-whatsapp"></i>
     </a>
 
@@ -305,7 +305,7 @@
                 document.getElementById('slider-aviso-container').style.display = 'block';
                 document.getElementById('seccion-opciones').style.display = 'block';
                 document.getElementById('footer-pedido').style.display = 'block';
-            } catch (e) { document.getElementById('loading-screen').innerHTML = "<p>Error de conexiÛn.</p>"; }
+            } catch (e) { document.getElementById('loading-screen').innerHTML = "<p>Error de conexi√≥n.</p>"; }
         }
 
         function renderizarCategorias() {
@@ -330,8 +330,8 @@
                 const originalIdx = datosFull.items.findIndex(orig => orig.nombre === p.nombre);
                 const currentQty = document.getElementById(`qty-${originalIdx}`) ? document.getElementById(`qty-${originalIdx}`).value : 0;
                 const esCombo = p.categoria && p.categoria.toLowerCase() === 'combos';
-                let htmlMinimo = (!esCombo && p.minimo !== null) ? `<span class="min-tag">MÌnimo: ${p.minimo} unid.</span>` : '';
-                return `<div class="card"><div class="prod-header"><img src="${getDirectLink(p.imagen)}" onerror="this.src='https://via.placeholder.com/150'" onclick="document.getElementById('modal-img-zoom').style.display='flex';document.querySelector('#modal-img-zoom img').src=this.src" style="cursor:zoom-in;"><div class="prod-info"><span class="cat-tag">${p.categoria}</span><h4>${p.nombre}</h4><span class="desc-larga">${p.descripcion}</span>${htmlMinimo}<div class="price-tag">$ ${p.precio.toLocaleString('es-AR')} + iva</div></div></div><div class="controls"><span style="font-size:12px; font-weight:700;">CANTIDAD:</span><div class="qty-wrapper"><button class="btn-qty" onclick="qty(${originalIdx},-1)">-</button><input type="number" id="qty-${originalIdx}" value="${currentQty}" readonly><button class="btn-qty" onclick="qty(${originalIdx},1)">+</button></div></div></div>`
+                let htmlMinimo = (!esCombo && p.minimo !== null) ? `<span class="min-tag">M√≠nimo: ${p.minimo} unid.</span>` : '';
+                return `<div class="card"><div class="prod-header"><img src="${getDirectLink(p.imagen)}" onerror="this.src='https://via.placeholder.com/150'" onclick="document.getElementById('modal-img-zoom').style.display='flex';document.querySelector('#modal-img-zoom img').src=this.src" style="cursor:zoom-in;"><div class="prod-info"><span class="cat-tag">${p.categoria}</span><h4>${p.nombre}</h4><span class="desc-larga">${p.descripcion}</span>${htmlMinimo}<div class="price-tag">$ ${p.precio.toLocaleString('es-AR')}</div></div></div><div class="controls"><span style="font-size:12px; font-weight:700;">CANTIDAD:</span><div class="qty-wrapper"><button class="btn-qty" onclick="qty(${originalIdx},-1)">-</button><input type="number" id="qty-${originalIdx}" value="${currentQty}" readonly><button class="btn-qty" onclick="qty(${originalIdx},1)">+</button></div></div></div>`
             }).join('');
         }
 
@@ -366,7 +366,7 @@
                 const q = document.getElementById(`qty-${i}`) ? parseInt(document.getElementById(`qty-${i}`).value) : 0;
                 if(q > 0) { tieneItems = true; contenido += `<div class="item-carrito"><button class="btn-delete" onclick="removeProduct(${i})"><i class="fas fa-trash-alt"></i></button><div class="cart-item-info"><strong>${p.nombre}</strong><br><small>$${p.precio.toLocaleString('es-AR')} c/u</small></div><div class="qty-wrapper"><button class="cart-qty-btn" onclick="qty(${i},-1)">-</button><span style="min-width:20px; text-align:center; font-weight:800">${q}</span><button class="cart-qty-btn" onclick="qty(${i},1)">+</button></div></div>`; }
             });
-            lista.innerHTML = tieneItems ? contenido : "<p style='text-align:center;'>VacÌo</p>";
+            lista.innerHTML = tieneItems ? contenido : "<p style='text-align:center;'>Vac√≠o</p>";
             document.getElementById('modal-carrito').style.display = 'block';
         }
 
@@ -392,11 +392,11 @@
                 if (cant > 0) {
                     const esCombo = p.categoria && p.categoria.toLowerCase() === 'combos';
                     if (!esCombo && p.minimo === null) sumaCombinables += cant;
-                    else if (!esCombo && p.minimo !== null && cant < p.minimo) erroresMinimos.push(`- ${p.nombre}: mÌnimo ${p.minimo}`);
+                    else if (!esCombo && p.minimo !== null && cant < p.minimo) erroresMinimos.push(`- ${p.nombre}: m√≠nimo ${p.minimo}`);
                 }
             });
-            if (sumaCombinables > 0 && sumaCombinables < 6) { alert(`MÌnimo total de 6 unidades para productos sin mÌnimo especÌfico.`); return; }
-            if (erroresMinimos.length > 0) { alert("MÌnimos insuficientes:\n" + erroresMinimos.join("\n")); return; }
+            if (sumaCombinables > 0 && sumaCombinables < 6) { alert(`M√≠nimo total de 6 unidades para productos sin m√≠nimo espec√≠fico.`); return; }
+            if (erroresMinimos.length > 0) { alert("M√≠nimos insuficientes:\n" + erroresMinimos.join("\n")); return; }
             
             const nombre = document.getElementById('input-nombre').value;
             if(!nombre) { alert("Completa los datos de la empresa."); irAFormulario(); return; }
@@ -441,13 +441,13 @@
                 // Preparamos el mensaje
                 const numeroWS = (datosFull.config && datosFull.config.telefono) ? datosFull.config.telefono : "5491176075453";
                 const listaFormateada = productosArr.join("%0A- ");
-                const mensajeWS = `*NUEVO PEDIDO CORPORATIVO*%0A%0A*Empresa:* ${data.nombre}%0A*Email:* ${data.email}%0A*TelÈfono:* ${data.telefono}%0A*${data.tipoDoc}:* ${data.numDoc}%0A*CP:* ${data.cp}%0A*Pago:* ${data.pago}%0A%0A*PRODUCTOS:*%0A- ${listaFormateada}%0A%0A*TOTAL ESTIMADO:* $${data.total}`;
+                const mensajeWS = `*NUEVO PEDIDO CORPORATIVO*%0A%0A*Empresa:* ${data.nombre}%0A*Email:* ${data.email}%0A*Tel√©fono:* ${data.telefono}%0A*${data.tipoDoc}:* ${data.numDoc}%0A*CP:* ${data.cp}%0A*Pago:* ${data.pago}%0A%0A*PRODUCTOS:*%0A- ${listaFormateada}%0A%0A*TOTAL ESTIMADO:* $${data.total}`;
                 
                 const urlFinal = `https://wa.me/${numeroWS}?text=${mensajeWS}`;
 
-                // CAMBIO CRÕTICO PARA IPHONE: 
+                // CAMBIO CR√çTICO PARA IPHONE: 
                 // Usamos location.href para que iOS no lo bloquee como popup
-                // y quitamos el alert previo para que la acciÛn sea fluida.
+                // y quitamos el alert previo para que la acci√≥n sea fluida.
                 window.location.href = urlFinal;
 
             } catch (error) {
